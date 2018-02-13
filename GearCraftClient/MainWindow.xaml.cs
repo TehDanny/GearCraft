@@ -24,5 +24,10 @@ namespace GearCraftClient
         {
             InitializeComponent();
         }
+
+        private void CraftItemBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

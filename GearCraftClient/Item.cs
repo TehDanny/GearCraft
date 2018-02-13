@@ -14,22 +14,12 @@ namespace GearCraftClient
         public string Name { get; set; }
         public List<Stat> Stats { get; set; }
 
-        public void GenerateItem()
+        public string SetRandomRarity()
         {
             throw new NotImplementedException();
         }
 
-        public void GetItem()
-        {
-            throw new NotImplementedException();
-        }
-
-        private string AddRandomRarity()
-        {
-            throw new NotImplementedException();
-        }
-
-        private string AddRandomStat(int itemLevel, string itemRarity)
+        public Stat AddRandomStat(int itemLevel, string itemRarity)
         {
             throw new NotImplementedException();
         }

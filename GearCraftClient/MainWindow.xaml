@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GearCraftClient"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="500" Width="700">
     <Grid>
-        
+        <Button Name="CraftItemBtn" Content="Craft!" HorizontalAlignment="Left" Margin="312,329,0,0" VerticalAlignment="Top" Width="75" Click="CraftItemBtn_Click"/>
+
     </Grid>
 </Window>
