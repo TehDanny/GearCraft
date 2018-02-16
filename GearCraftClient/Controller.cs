@@ -8,6 +8,13 @@ namespace GearCraftClient
 {
     class Controller
     {
+        private ItemStorage itemStorage;
+        
+        public Controller()
+	    {
+            itemStorage = new ItemStorage();
+	    }
+
         public void GenerateItem()
         {
             Item item = new Item();
@@ -15,9 +22,9 @@ namespace GearCraftClient
             item.Stats.Add(item.AddRandomStat(item.RequiredLevel, item.Rarity));
         }
 
-        public void GetItem()
+        public Item GetItem(int itemId)
         {
-            throw new NotImplementedException();
+            return itemStorage.GetItem(itemId);
         }
     }
 }

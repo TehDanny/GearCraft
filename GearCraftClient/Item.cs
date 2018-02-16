@@ -8,6 +8,7 @@ namespace GearCraftClient
 {
     class Item
     {
+        public int Id { get; set; }
         public int RequiredLevel { get; set; }
         public string Rarity { get; set; }
         public string Type { get; set; }
@@ -17,6 +18,8 @@ namespace GearCraftClient
         public string SetRandomRarity()
         {
             throw new NotImplementedException();
+
+            // if unique else rare else...
         }
 
         public Stat AddRandomStat(int itemLevel, string itemRarity)
@@ -28,6 +31,7 @@ namespace GearCraftClient
     public enum Rarity
     {
         LowQuality,
+        Normal,
         Magical,
         Rare,
         Unique

@@ -20,9 +20,12 @@ namespace GearCraftClient
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Controller controller;
+
         public MainWindow()
         {
             InitializeComponent();
+            controller = new Controller();
         }
 
         private void CraftItemBtn_Click(object sender, RoutedEventArgs e)

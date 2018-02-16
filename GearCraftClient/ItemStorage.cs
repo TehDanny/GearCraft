@@ -19,5 +19,10 @@ namespace GearCraftClient
         {
             Items.Add(item);
         }
+
+        public Item GetItem(int itemId)
+        {
+            return Items.Find(item => item.Id == itemId);
+        }
     }
 }
